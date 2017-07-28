@@ -25,7 +25,7 @@ void draw()
   fill(98,245,31);
   noStroke();
   fill(0,4);
-  rect(0,0,width,height);     // checked by default 1190
+  rect(0,0,width,height);    
   
   fill(98,245,31);
   
@@ -75,13 +75,13 @@ void drawRadar(){
 
 void drawObject() {
   pushMatrix();
-  translate(760,800); // moves the starting coordinats to new location
+  translate(760,800); 
   strokeWeight(9);
-  stroke(255,10,10); // red color
-  pixelsDistance = iDistance*22.5; // covers the distance from the sensor from cm to pixels
-  // limiting the range to 40 cms
+  stroke(255,10,10);
+  pixelsDistance = iDistance*22.5; 
+  
   if(iDistance<40){
-    // draws the object according to the angle and the distance
+    
   line(pixelsDistance*cos(radians(iAngle)),-pixelsDistance*sin(radians(iAngle)),750*cos(radians(iAngle)),-750*sin(radians(iAngle)));
   }
   popMatrix();
