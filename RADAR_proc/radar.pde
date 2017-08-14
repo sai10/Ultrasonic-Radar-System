@@ -2,7 +2,6 @@ import processing.serial.*;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 
-
 Serial myPort;
 String angle="";
 String distance="";
